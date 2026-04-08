@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
-  },
-  {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
+    title: "Военное шифрование",
+    description: "Протокол WireGuard с шифрованием AES-256. Ваш трафик защищён даже в публичных Wi-Fi сетях.",
     icon: "lock",
-    badge: "Сертификат",
+    badge: "Безопасность",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Без логов",
+    description: "Мы не храним историю вашей активности. Полная конфиденциальность — никто не знает, что вы делаете в сети.",
+    icon: "shield",
+    badge: "Приватность",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Высокая скорость",
+    description: "Серверы оптимизированы для стриминга, игр и звонков. Никаких тормозов и обрывов соединения.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Скорость",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Для всей семьи",
+    description: "Подключайте сколько нужно устройств — смартфоны, ноутбуки, планшеты всех близких на одном аккаунте.",
+    icon: "users",
+    badge: "Семья",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Простая настройка",
+    description: "Установка за 2 минуты. Никаких технических знаний не нужно — один клик и вы защищены.",
+    icon: "globe",
+    badge: "Просто",
+  },
+  {
+    title: "Всегда онлайн",
+    description: "Автоматическое переподключение и Kill Switch — если VPN отключится, интернет заблокируется до восстановления.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Надёжность",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Надёжная защита без лишних сложностей</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Всё необходимое для безопасного интернета — для вас и ваших близких
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "users" && "👨‍👩‍👧‍👦"}
+                    {feature.icon === "globe" && "🌐"}
+                    {feature.icon === "target" && "🎯"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}

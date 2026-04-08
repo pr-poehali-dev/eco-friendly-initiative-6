@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Алексей М.",
+    role: "Пользователь с 2023 года",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Наконец-то нормальный VPN без лишних заморочек. Поставил родителям — они даже не заметили, что что-то изменилось. Просто работает.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Марина К.",
+    role: "Фрилансер, Москва",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "Работаю с зарубежными клиентами, нужен стабильный доступ к иностранным сервисам. SecureVPN не подводил ни разу за 8 месяцев использования.",
+  },
+  {
+    name: "Денис Т.",
+    role: "Пользователь с семьёй",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Подключил всю семью — жену, детей, родителей. Один аккаунт на всех, никаких проблем. Скорость хорошая, стриминг не тормозит.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Что говорят пользователи</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Реальные отзывы людей, которые доверяют нам защиту своей приватности
           </p>
         </div>
 
